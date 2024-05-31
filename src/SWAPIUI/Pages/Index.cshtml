@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+
+<h1>Star Wars Characters</h1>
+
+
+
+
+
+
+
+
+@foreach (var character in Model.Characters)
+{
+    <form>
+        <label for="name">Name:</label><br>
+        @character.Name<br>
+
+        <label for="height">Height:</label><br>
+        @character.Height<br>
+        <label for="mass">Mass:</label><br>
+        @character.Mass<br>
+        <label for="hair_color">Hair Color:</label><br>
+        @character.Hair_Color<br>
+        <label for="skin_color">Skin Color:</label><br>
+        @character.Skin_Color<br>
+        <label for="eye_color">Eye Color:</label><br>
+        @character.Eye_Color<br>
+        <label for="birth_year">Birth Year:</label><br>
+        @character.Birth_Year<br>
+        <label for="gender">Gender:</label><br>
+        @character.Gender<br>
+        <label for="homeworld">Homeworld:</label><br>
+        @character.Homeworld<br>
+        <label for="films">Films:</label><br>
+        @character.Films.ToString()<br>
+        <label for="species">Species:</label><br>
+        @character.Species.ToString()<br>
+        <label for="vehicles">Vehicles:</label><br>
+        @character.Vehicles.ToString()<br>
+        <label for="starships">Starships:</label><br>
+        @character.Starships.ToString()<br>
+        <label for="created">Created:</label><br>
+        @character.Created<br>
+        <label for="edited">Edited:</label><br>
+        @character.Edited<br>
+        <label for="url">URL:</label><br>
+        @character.Url<br>
+    </form>
+}
